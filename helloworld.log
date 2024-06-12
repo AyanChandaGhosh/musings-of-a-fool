@@ -1,0 +1,25 @@
+1                                          Altair SLC        11:03 Wednesday, June 12, 2024     
+
+NOTE: Copyright 2002-2024 World Programming, an Altair Company
+NOTE: Altair SLC 2024 (05.24.01.00.001044)
+      License: Altair Managed Licensing: Workstation, 10 units; expiry: 2024-06-14 19:59
+NOTE: This session is executing on the MACOS platform and is running in 64 bit mode
+
+1         /* Hello, there! Hello, world! */
+2         
+3         DATA _NULL_;
+4           FILE PRINT;
+5           PUT 'Hello, world!';
+6         RUN;
+
+NOTE: 1 record was written to file PRINT
+
+NOTE: The data step took :
+      real time : 0.028
+      cpu time  : 0.012
+
+
+
+NOTE: Submitted statements took :
+      real time : 1.136
+      cpu time  : 0.255

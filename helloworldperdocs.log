@@ -1,0 +1,41 @@
+1                                          Altair SLC        10:33 Wednesday, June 12, 2024     
+
+NOTE: Copyright 2002-2024 World Programming, an Altair Company
+NOTE: Altair SLC 2024 (05.24.01.00.001044)
+      License: Altair Managed Licensing: Workstation, 10 units; expiry: 2024-06-14 19:59
+NOTE: This session is executing on the MACOS platform and is running in 64 bit mode
+
+1         proc ds2 libs=work;
+          ^
+ERROR: Procedure DS2 not known
+2         data _null_;
+3         
+4           /* init() - system method */
+5           method init();
+            ^
+ERROR: The statement "method" is unknown in this context
+6             declare varchar(16) message; /* method (local) scope */
+                      ^
+ERROR: 'varchar' is not a known component type
+7             message = 'Hello World!';
+8             put message;
+
+NOTE: DATA step was not executed because of errors detected
+NOTE: The data step took :
+      real time : 0.063
+      cpu time  : 0.003
+
+
+9           end;
+            ^
+ERROR: Expected a statement keyword : found "end"
+10        enddata;
+          ^
+ERROR: Expected a statement keyword : found "enddata"
+11        run;
+12        quit;
+ERROR: Error printed on page 1
+
+NOTE: Submitted statements took :
+      real time : 1.154
+      cpu time  : 0.232
